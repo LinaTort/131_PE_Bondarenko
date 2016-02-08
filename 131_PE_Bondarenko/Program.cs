@@ -13,10 +13,16 @@ namespace _131_PE_Bondarenko
             Console.WriteLine("enter the amount of revenue");
             double revenue = Convert.ToInt32(Console.ReadLine());
             double summ;
-           
-            if (revenue < 10000)
+            int mrot = 300;//для 2 задания
+            if (revenue <= mrot)
+            {
+                revenue = mrot;
+                Console.WriteLine("your revenues=" + revenue);
+            }
+            if (revenue < 10000 && revenue > 300)//второе условие нужно для задания 2
             {
                 Console.WriteLine("revenue={0}", revenue);
+               
             }
             if (revenue == 10000)
             {
